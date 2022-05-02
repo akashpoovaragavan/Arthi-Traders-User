@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:elevation="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/custom_linear2"
+    android:id="@+id/ext_lin">
+    <TextView
+        android:id="@+id/sms_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sms Title"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/sms_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="Content"
+        android:fontFamily="@font/montserrat"
+        android:textColor="@color/blue_green"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/sms_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="10dp"
+        android:text="Product Quantity"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:textSize="16sp"/>
+
+</LinearLayout>

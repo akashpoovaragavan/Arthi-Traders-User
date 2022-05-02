@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Arthi Traders User</string>
+
+    <string name="heading1">Welcome </string>
+    <string name="heading2">Shop Online </string>
+    <string name="heading3"> Secured Payment</string>
+    <string name="heading4">Trusted Delivers </string>
+
+    <string name="Desc1">Shop with Arthi Traders</string>
+    <string name="Desc2">Make purchase easier</string>
+    <string name="Desc3">Highly secured payment process</string>
+    <string name="Desc4">Best Delivery partners</string>
+    <string name="successpayment">Your payment was success.Our support team will call back soon!!</string>
+    <string name="successorder">Your order was successfully inserted.Our support team will call back soon!!</string>
+    <string name="notificationid">ats</string>
+
+    <string name="about">ARTHI traders is operating in the field of
+distribution and supply of Veedol
+Lubricants, is a leading manufacturer and
+marketer of quality lubricants to satisfy
+automotive and industrial needs, founded
+by Mrs.Sridevi and Mr. Manikandan, who
+started their journey to make a
+sustainable and productive lubricant
+market in Dindigul. We have been catering
+to a massive retailer and consumer base
+for about 25 years and still going on. We
+offer door to door services and solutions
+for all your automotive needs by
+understanding your requirements. We also
+recommend and offer adaptive and quick
+industrial solution to cope up with your
+commercial needs. We serve in Dindigul,
+Theni and Sivaganga districts. A venture
+which ensures qualitative products at
+affordable prices. </string>
+
+</resources>

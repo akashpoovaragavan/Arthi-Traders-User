@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/re_lin"
+    android:layout_margin="10dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/custom_style"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/re_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:elevation="10dp"/>
+
+    <TextView
+        android:id="@+id/re_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="Product name"
+        android:textColor="@color/text_color"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/re_offer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_text_linear"
+        android:fontFamily="@font/montserrat"
+        android:padding="5dp"
+        android:text="Offers"
+        android:textColor="@color/text_color" />
+</LinearLayout>

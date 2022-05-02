@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text1">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="button1">
+        <item name="cornerSize" type="50%"/>
+    </style>
+</resources>

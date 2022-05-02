@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "26896479081",
+    "project_id": "arthitraders-ab7ab",
+    "storage_bucket": "arthitraders-ab7ab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:26896479081:android:7a8c4cc71a28bf5a98c3f8",
+        "android_client_info": {
+          "package_name": "com.arthi.traders"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "26896479081-997j81esftu3f1o78s0ju553ujbddqa0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arthi.traders",
+            "certificate_hash": "046a56fd2751b431ddfd00407d83d9e9de0fcc7f"
+          }
+        },
+        {
+          "client_id": "26896479081-fs4cpg4m66tmtjvjavrogvmoe1emv745.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arthi.traders",
+            "certificate_hash": "9423c81ec96268e87d2d15b73430f8db52f198f4"
+          }
+        },
+        {
+          "client_id": "26896479081-i84rrm1mjcnirc6aqs4jnij34ge6hl23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSAco8Nbene8tnhvkkE8ZvHKesyvYzwEs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "26896479081-i84rrm1mjcnirc6aqs4jnij34ge6hl23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

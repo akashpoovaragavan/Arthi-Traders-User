@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lavender"
+    tools:context=".view.RequestScreen">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Title"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:scrollbars="none">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/request_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_linear2"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="10dp"
+                                android:weightSum="2">
+
+                                <RadioButton
+                                    android:id="@+id/bill"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bt_selector"
+                                    android:button="@android:color/transparent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Bill"
+                                    android:textColor="@color/navy" />
+
+                                <RadioButton
+                                    android:id="@+id/statement"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/bt_selector"
+                                    android:button="@android:color/transparent"
+                                    android:fontFamily="@font/montserrat"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:text="Statement"
+                                    android:textColor="@color/navy" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="2">
+
+                            <ImageView
+                                android:id="@+id/from"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/calendar" />
+
+                            <ImageView
+                                android:id="@+id/to"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:src="@drawable/calendar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="10dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:boxStrokeWidth="1dp"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/select_from_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:cursorVisible="false"
+                                        android:ems="10"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:fontFamily="@font/montserrat"
+                                        android:hint="From Date"
+                                        android:inputType="text"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="10dp">
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    app:boxStrokeWidth="1dp"
+                                    app:hintEnabled="false">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/select_to_date"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:clickable="false"
+                                        android:cursorVisible="false"
+                                        android:ems="10"
+                                        android:focusable="false"
+                                        android:focusableInTouchMode="false"
+                                        android:fontFamily="@font/montserrat"
+                                        android:hint="To Date"
+                                        android:inputType="text"
+                                        android:singleLine="true"
+                                        android:textColor="@color/black"
+                                        android:textSize="16sp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/request_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/custom_button"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Request"
+                            android:textColor="@color/navy" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/view_re"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/request_date"
+                        android:layout_margin="10dp"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="@font/montserrat"
+                        android:gravity="center"
+                        android:text="View All"
+                        android:textColor="@color/text_color"
+                        android:textSize="18sp" />
+
+                    <include
+                        android:id="@+id/emptyLayout"
+                        layout="@layout/empty"
+                        android:layout_below="@+id/view_re"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_centerHorizontal="true"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/request_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_re"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp" />
+                </RelativeLayout>
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+</RelativeLayout>
